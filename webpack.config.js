@@ -43,6 +43,10 @@ module.exports = {
         test: /\.jsx$/,
         loader: "react-hot-loader!babel-loader",
         exclude: [/node_modules/, /dist/]
+      },
+      {
+        test: /\.(scss|sass)$/,
+        loader: 'style-loader!css-loader!sass-loader'
       }
     ]
   }

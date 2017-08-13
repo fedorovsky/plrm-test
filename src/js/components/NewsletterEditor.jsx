@@ -1,4 +1,5 @@
 import React from 'react';
+import './NewsletterEditor.scss';
 
 const NewsletterEditor = React.createClass({
   getInitialState: function () {

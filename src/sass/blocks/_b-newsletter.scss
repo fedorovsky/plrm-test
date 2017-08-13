@@ -23,19 +23,6 @@
     color: $darkgray;
     border: 0;
   }
-  &__message {
-    font-size: 14px;
-    position: absolute;
-    bottom: -22px;
-    left: 0;
-    margin: 0;
-    &.-type-error {
-      color: #c53e3e;
-    }
-    &.-type-success {
-      color: green;
-    }
-  }
   &__submit {
     font-size: 12px;
     font-weight: bold;

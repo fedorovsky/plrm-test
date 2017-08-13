@@ -1,0 +1,13 @@
+.newsletter-message{
+  font-size: 14px;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  margin: 0;
+  &.-type-error {
+    color: #c53e3e;
+  }
+  &.-type-success {
+    color: green;
+  }
+}
