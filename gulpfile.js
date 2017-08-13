@@ -50,7 +50,7 @@ const CONFIG = {
 
 // Load application tasks
 (function () {
-  let dir = requireDir('./tasks');
+  let dir = requireDir('./gulp-tasks');
   Object.keys(dir).forEach(function (key) {
     dir[key] = dir[key](gulp, $, CONFIG);
   });
