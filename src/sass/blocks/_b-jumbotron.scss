@@ -1,0 +1,34 @@
+.l-jumbotron {
+  background: $jumbotronBackground url("../img/jumbotron-photo.jpg") 50% 0;
+}
+.b-jumbotron {
+  @include responsive($breakpoint-sm) {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  @include responsive($breakpoint-xs) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  font-family: $Lato;
+  font-weight: 900;
+  min-height: 530px;
+  padding: 0.1px;
+  color: $white;
+  border: 1px solid transparent;
+  &__title {
+    @include responsive($breakpoint-xs) {
+      margin-top: 30px;
+    }
+    font-size: 55px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

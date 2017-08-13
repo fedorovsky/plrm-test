@@ -1,0 +1,39 @@
+@import "normalize";
+@import "variables";
+@import "settings";
+@import "sprite";
+@import "mixins";
+@import "fonts";
+@import "flexboxgrid";
+@import "blocks/b-page";
+@import "blocks/b-header";
+@import "blocks/b-logo";
+@import "blocks/b-nav";
+@import "blocks/b-btn-nav";
+@import "blocks/b-phone";
+@import "blocks/b-jumbotron";
+@import "blocks/b-services";
+@import "blocks/b-service";
+@import "blocks/b-articles";
+@import "blocks/b-products";
+@import "blocks/b-info";
+@import "blocks/b-screen";
+@import "blocks/b-button";
+@import "blocks/b-showcase";
+@import "blocks/b-articles";
+@import "blocks/b-article";
+@import "blocks/b-footer";
+@import "blocks/b-address";
+@import "blocks/b-address-list";
+@import "blocks/b-footer-nav";
+@import "blocks/b-newsletter";
+@import "blocks/b-communications";
+@import "blocks/b-social";
+/* Reset the box-sizing */
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}

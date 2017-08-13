@@ -1,0 +1,14 @@
+.b-screen {
+  @include responsive($breakpoint-xs) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    @include responsive($breakpoint-xs) {
+      display: inline-block;
+    }
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}

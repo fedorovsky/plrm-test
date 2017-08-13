@@ -1,0 +1,19 @@
+.b-btn-nav {
+  @include responsive($breakpoint-xs) {
+    display: block;
+  }
+  @include responsive($breakpoint-xs) {
+    position: absolute;
+    top: -51px;
+    right: 0;
+  }
+  display: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  &__hamburger {
+    width: 32px;
+    height: 32px;
+  }
+}

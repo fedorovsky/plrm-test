@@ -1,0 +1,17 @@
+.l-articles {
+  background-color: $whitesmoke;
+}
+.b-articles {
+  @include responsive($breakpoint-xs) {
+    padding: 15px 5% 25px;
+  }
+  @include responsive($breakpoint-sm) {
+    padding: 15px 2% 25px;
+  }
+  @include responsive($breakpoint-lg) {
+    padding-top: 39px;
+    padding-right: 0;
+    padding-bottom: 76px;
+    padding-left: 0;
+  }
+}

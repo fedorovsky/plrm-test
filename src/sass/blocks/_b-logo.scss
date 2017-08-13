@@ -1,0 +1,10 @@
+.b-logo {
+  margin: 0;
+  &__lnk {
+    font-size: 26px;
+    line-height: 70px;
+    display: block;
+    text-decoration: none;
+    color: $lightBlack;
+  }
+}

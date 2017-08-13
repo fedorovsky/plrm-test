@@ -1,0 +1,57 @@
+.b-newsletter {
+  position: relative;
+  &__form {
+    @include responsive($breakpoint-xs) {
+      display: flex;
+    }
+    @include responsive($breakpoint-sm) {
+      display: flex;
+    }
+  }
+  &__input {
+    @include responsive($breakpoint-sm) {
+      flex: 1 1 auto;
+    }
+    @include responsive($breakpoint-xs) {
+      flex: 1 1 auto;
+    }
+    font-size: 14px;
+    line-height: 30;
+    width: 270px;
+    height: 30px;
+    padding: 0 10px;
+    color: $darkgray;
+    border: 0;
+  }
+  &__message {
+    font-size: 14px;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    margin: 0;
+    &.-type-error {
+      color: #c53e3e;
+    }
+    &.-type-success {
+      color: green;
+    }
+  }
+  &__submit {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0 5px;
+    transition: all 0.3s;
+    vertical-align: top;
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+    outline: none;
+    background-color: $gray;
+    &:hover {
+      background-color: lighten($gray, 5%);
+    }
+  }
+}

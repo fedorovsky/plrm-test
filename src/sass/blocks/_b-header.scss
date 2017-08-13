@@ -1,0 +1,46 @@
+.b-header {
+  @include responsive($breakpoint-xs) {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-height: 100%;
+  }
+  @include responsive($breakpoint-sm) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  @include responsive($breakpoint-md) {
+  }
+  @include responsive($breakpoint-lg) {
+    padding: 0;
+  }
+  font-family: $Lato;
+  max-height: 70px;
+  background-color: $white;
+  &__nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    @include responsive($breakpoint-xs) {
+    }
+  }
+  &__contact {
+    @include responsive($breakpoint-xs) {
+      display: none;
+    }
+    @include responsive($breakpoint-sm) {
+      display: none;
+    }
+    @include responsive($breakpoint-md) {
+      display: none;
+    }
+    @include responsive($breakpoint-lg) {
+      display: flex;
+    }
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

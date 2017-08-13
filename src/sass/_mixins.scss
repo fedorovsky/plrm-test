@@ -1,0 +1,41 @@
+@mixin font-face($name, $file, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: "#{$name}";
+    font-weight: $weight;
+    font-style: $style;
+    src: url("../fonts/#{$file}.eot");
+    src: url("../fonts/#{$file}.woff") format("woff"),
+    url("../fonts/#{$file}.ttf") format("truetype"),
+    url("../fonts/#{$file}.svg##{$file}") format("svg");
+  }
+}
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@mixin clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin responsive($breakpoint) {
+  @media screen and (#{$breakpoint}) {
+    @content;
+  }
+}
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%;
+  height: auto;
+}
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}

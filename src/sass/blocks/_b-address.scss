@@ -1,0 +1,10 @@
+.b-address {
+  font-style: normal;
+  color: $darkgray;
+  &__company {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    color: $white;
+  }
+}

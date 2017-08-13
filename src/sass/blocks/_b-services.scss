@@ -1,0 +1,18 @@
+.l-services {
+  background-color: $whitesmoke;
+}
+.b-services {
+  @include responsive($breakpoint-xs) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  @include responsive($breakpoint-sm) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  @include responsive($breakpoint-lg) {
+    padding-right: 0;
+    padding-bottom: 36px;
+    padding-left: 0;
+  }
+}

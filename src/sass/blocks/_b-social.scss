@@ -1,0 +1,37 @@
+@keyframes hoverSocial {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 5px;
+  }
+}
+.b-social {
+  @include reset-list();
+  display: flex;
+  &__item {
+    margin-right: 5px;
+  }
+  &__lnk {
+    position: relative;
+    display: block;
+    will-change: auto;
+    &:hover {
+      top: 5px;
+      animation: hoverSocial;
+      animation-duration: 0.3s;
+    }
+    &.-icon-facebook {
+      @include sprite($icon-facebook);
+    }
+    &.-icon-twitter {
+      @include sprite($icon-twitter);
+    }
+    &.-icon-google {
+      @include sprite($icon-google);
+    }
+    &.-icon-rss {
+      @include sprite($icon-rss);
+    }
+  }
+}

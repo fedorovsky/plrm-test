@@ -1,0 +1,24 @@
+.l-products {
+  @include responsive($breakpoint-xs) {
+    padding-bottom: 0;
+  }
+  font-family: $Lato;
+  padding-bottom: 90px;
+  background-color: $gainsboro;
+}
+.b-products {
+  @include responsive($breakpoint-xs) {
+    padding: 0 5% 0 5%;
+    text-align: center;
+  }
+  @include responsive($breakpoint-sm) {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  @include responsive($breakpoint-lg) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  padding-top: 90px;
+  padding-bottom: 62px;
+}

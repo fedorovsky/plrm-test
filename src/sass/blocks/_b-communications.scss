@@ -1,0 +1,11 @@
+.b-communications {
+  margin-top: 10px;
+  margin-bottom: 28px;
+  &__title {
+    font-size: 14px;
+    line-height: 36px;
+    margin: 0;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

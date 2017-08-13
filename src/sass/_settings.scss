@@ -1,0 +1,9 @@
+$lg: 1170px;
+$md: 992px;
+$sm: 768px;
+$xs: 767px;
+$breakpoint-lg: "min-width: #{$lg}"; // 1200
+$breakpoint-md: "min-width: #{$md}"; // 992
+$breakpoint-sm: "min-width: #{$sm}"; // 768
+$breakpoint-xs: "max-width: #{$xs}"; // max-width 767px
+

@@ -1,0 +1,51 @@
+.b-showcase {
+  @include reset-list();
+  @include responsive($breakpoint-xs) {
+    display: block;
+  }
+  display: flex;
+  background-color: #fff;
+  &__item {
+    text-align: center;
+    flex: 1 1 auto;
+  }
+  &__lnk {
+    display: block;
+    padding-top: 23px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: $black;
+    &.-is-active {
+      color: $white;
+      background-color: $black;
+    }
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+  &__title {
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  &__category {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__logo {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

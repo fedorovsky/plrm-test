@@ -1,0 +1,16 @@
+.b-button {
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 90px;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: $black;
+  border: none;
+  border-radius: 6px;
+  &.-type-default {
+    background-color: $lightgrey;
+    &:hover {
+      background-color: lighten($lightgrey, 5%);
+    }
+  }
+}
